@@ -19,7 +19,7 @@ export default function Project1() {
     <>
       <Navbar />
       <main className="min-h-screen bg-black text-white px-4 pt-32 pb-16">
-        <h1 className="text-4xl font-bold mb-10 text-center text-teal-300">
+        <h1 className="text-4xl font-bold mb-10 text-center text-gray-300">
           SuperStore Sales Dashboard
         </h1>
 
@@ -86,7 +86,7 @@ export default function Project1() {
 
           {/* CSV Download */}
           <div className="bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-teal-300 text-center">
+            <h2 className="text-2xl font-bold mb-4 text-gray-300 text-center">
               📁 Download the Dataset
             </h2>
             <p className="text-gray-300 mb-6 text-center">
@@ -95,7 +95,7 @@ export default function Project1() {
             <a
               href="/assets/SuperStore_Sales_Data.csv"
               download
-              className="inline-block bg-teal-600 text-white px-6 py-3 rounded hover:bg-teal-700 transition"
+              className="inline-block bg-gray-600 text-white px-6 py-3 rounded hover:bg-teal-700 transition"
             >
               Download SuperStore_Sales_Data.csv
             </a>

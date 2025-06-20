@@ -16,7 +16,7 @@ export default function Home() {
         </p>
 
         <p className="text-sm italic text-gray-400 text-center mt-4">
-          This site is a work in progress — check back soon for updates!
+          I’m currently transitioning my work to this custom-built portfolio site. Thanks for your patience while things come together!
         </p>
       </main>
     </>

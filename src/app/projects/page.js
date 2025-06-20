@@ -14,15 +14,11 @@ export default function ProjectsOverview() {
             href="/projects/project1"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-teal-400 mb-2">
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
               SuperStore Sales Dashboard
             </h2>
             <p>
-              A Tableau dashboard that transforms SuperStore sales data into
-              clear, actionable insights—highlighting my skills in data
-              cleaning, visual analytics, and UX-focused design to help
-              stakeholders quickly understand performance and make informed
-              decisions.
+              A Streamlit dashboard that transforms Amazon review data into interactive, insight-rich visuals—highlighting my skills in SQL data extraction, Python-based transformation, and user-centered analytics to help stakeholders explore sentiment trends, review quality, and product performance with ease.
             </p>
           </Link>
 
@@ -31,10 +27,14 @@ export default function ProjectsOverview() {
             href="/projects/project2"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-teal-400 mb-2">
-              Project 2
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
+              SQL + Python Data Pipeline
             </h2>
-            <p>Coming Soon!</p>
+            <p>
+              Extracted customer sales data using SQL, cleaned and analyzed it
+              with Python (Pandas), and visualized trends using matplotlib and
+              seaborn to uncover key business insights.
+            </p>
           </Link>
 
           {/* Project 3 */}
@@ -42,7 +42,7 @@ export default function ProjectsOverview() {
             href="/projects/project3"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-teal-400 mb-2">
+            <h2 className="text-xl font-semibold text-gray -400 mb-2">
               Project 3
             </h2>
             <p>Coming Soon!</p>
@@ -53,7 +53,7 @@ export default function ProjectsOverview() {
             href="/projects/project4"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-teal-400 mb-2">
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
               Project 4
             </h2>
             <p>Coming Soon!</p>
@@ -64,7 +64,7 @@ export default function ProjectsOverview() {
             href="/projects/project5"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-teal-400 mb-2">
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
               Project 5
             </h2>
             <p>Coming Soon!</p>
