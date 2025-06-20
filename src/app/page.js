@@ -1,5 +1,3 @@
-import Navbar from '../components/Navbar';
-
 export default function Home() {
   return (
     <>
@@ -13,6 +11,10 @@ export default function Home() {
         <p className="text-xl text-center text-gray-300 max-w-2xl mb-6">
           I&apos;m a Data Analyst with a strong foundation in UX Design and Web Development.
           I blend data storytelling, dashboard design, and front-end skills to uncover insights and create intuitive user experiences.
+        </p>
+
+        <p className="text-sm italic text-gray-400 text-center mt-4">
+          This site is a work in progress — check back soon for updates!
         </p>
       </main>
     </>
