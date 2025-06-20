@@ -1,35 +1,42 @@
 "use client";
+
 import { useEffect } from "react";
 import Navbar from "../../../components/Navbar";
+import Image from "next/image";
 
 export default function Project1() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
     script.async = true;
-    document.getElementById("tableauViz").appendChild(script);
+    const vizContainer = document.getElementById("tableauViz");
+    if (vizContainer) {
+      vizContainer.appendChild(script);
+    }
   }, []);
 
   return (
     <>
       <Navbar />
       <main className="min-h-screen bg-black text-white px-4 pt-32 pb-16">
-        <h1 className="text-4xl font-bold mb-6 text-center">SuperStore Sales Dashboard</h1>
+        <h1 className="text-4xl font-bold mb-10 text-center text-teal-300">
+          SuperStore Sales Dashboard
+        </h1>
 
-        {/* Project Description */}
+        {/* Description */}
         <section className="max-w-5xl mx-auto mb-12 text-center">
           <p className="text-lg text-gray-300">
-            This interactive Tableau dashboard showcases my ability to transform raw sales data into clear, 
-            actionable insights. Using real-world SuperStore data, I conducted a multi-level analysis of profit 
-            trends, regional sales performance, and product category effectiveness. This project highlights my 
-            proficiency in data cleaning, visual analytics, and UX-focused dashboard design - all essential skills 
-            I use to help stakeholders quickly understand performance and make informed decisions.
+            This interactive Tableau dashboard showcases my ability to transform raw sales data into clear,
+            actionable insights. Using real-world SuperStore data, I conducted a multi-level analysis of profit
+            trends, regional sales performance, and product category effectiveness. This project highlights my
+            proficiency in data cleaning, visual analytics, and UX-focused dashboard design—essential skills I use
+            to help stakeholders quickly understand performance and make informed decisions.
           </p>
         </section>
 
-        {/* Split Layout */}
+        {/* Dashboard + Dataset */}
         <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Dashboard (Left Column) */}
+          {/* Dashboard */}
           <div
             className="tableauPlaceholder"
             id="tableauViz"
@@ -37,10 +44,12 @@ export default function Project1() {
           >
             <noscript>
               <a href="https://public.tableau.com/views/SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard">
-                <img
+                <Image
                   alt="Superstore Dashboard"
                   src="https://public.tableau.com/static/images/Su/SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard/1_rss.png"
-                  style={{ border: "none", width: "100%" }}
+                  width={1200}
+                  height={800}
+                  style={{ border: "none", width: "100%", height: "auto" }}
                 />
               </a>
             </noscript>
@@ -75,16 +84,18 @@ export default function Project1() {
             </object>
           </div>
 
-          {/* Download Section (Right Column) */}
+          {/* CSV Download */}
           <div className="bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-center">📁 Download the Dataset</h2>
+            <h2 className="text-2xl font-bold mb-4 text-teal-300 text-center">
+              📁 Download the Dataset
+            </h2>
             <p className="text-gray-300 mb-6 text-center">
-              Explore the original CSV dataset used to build the dashboard. You can use it in Excel, Power BI, or any tool of your choice.
+              Explore the original CSV dataset used to build the dashboard. You can open it in Excel, Power BI, or any data tool of your choice.
             </p>
             <a
               href="/assets/SuperStore_Sales_Data.csv"
               download
-              className="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition"
+              className="inline-block bg-teal-600 text-white px-6 py-3 rounded hover:bg-teal-700 transition"
             >
               Download SuperStore_Sales_Data.csv
             </a>
