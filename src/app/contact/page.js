@@ -7,11 +7,37 @@ export default function ContactPage() {
         </p>
   
         <div className="space-y-4 text-center">
-          <p>Email: <a href="mailto:amschembri81@gmail.com" className="text-blue-400 hover:underline">amschembri81@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/amschembri" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">linkedin.com/in/amschembri</a></p>
-          <p>GitHub:{" "}<a href="https://github.com/amschembri81" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">github.com/amschembri81</a>
-</p>
-
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:amschembri81@gmail.com"
+              className="text-blue-400 hover:underline"
+            >
+              amschembri81@gmail.com
+            </a>
+          </p>
+          <p>
+            LinkedIn:{" "}
+            <a
+              href="https://www.linkedin.com/in/amschembri"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              linkedin.com/in/amschembri
+            </a>
+          </p>
+          <p>
+            GitHub:{" "}
+            <a
+              href="https://github.com/amschembri81"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              github.com/amschembri81
+            </a>
+          </p>
         </div>
       </main>
     );
