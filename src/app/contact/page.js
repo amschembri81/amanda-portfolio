@@ -3,7 +3,7 @@ export default function ContactPage() {
       <main className="min-h-screen bg-gray-900 text-white py-12 px-6 flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold mb-6 text-center">Get in Touch</h1>
         <p className="text-lg text-gray-300 mb-8 text-center max-w-xl">
-          I'm always open to new opportunities, collaborations, or just talking data, design, and tech. Feel free to reach out!
+          I&apos;m always open to new opportunities, collaborations, or just talking data, design, and tech. Feel free to reach out!
         </p>
   
         <div className="space-y-4 text-center">
