@@ -42,10 +42,12 @@ export default function ProjectsOverview() {
             href="/projects/project3"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-gray -400 mb-2">
-              Project 3
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
+              Term Deposit Subscription Predictor
             </h2>
-            <p>Coming Soon!</p>
+            <p>
+              Built a full-stack machine learning app using Random Forest and SMOTE to predict whether a banking customer will subscribe to a term deposit. Includes interactive dashboards for model evaluation, batch prediction, and customer segmentation via Streamlit.
+            </p>
           </Link>
 
           {/* Project 4 */}
