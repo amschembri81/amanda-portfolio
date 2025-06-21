@@ -56,9 +56,11 @@ export default function ProjectsOverview() {
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
             <h2 className="text-xl font-semibold text-gray-400 mb-2">
-              Project 4
+              Live Data Stream Dashboard
             </h2>
-            <p>Coming Soon!</p>
+            <p>
+              A real-time dashboard built with FastAPI, WebSockets, and React that streams live clickstream data and purchase activity. Includes dynamic Chart.js visualizations, CSV export, and logs live product interactions. Built for performance monitoring and behavioral analysis.
+            </p>
           </Link>
 
           {/* Project 5 */}

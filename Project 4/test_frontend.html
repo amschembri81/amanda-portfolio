@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Data Stream</title>
+</head>
+<body style="background:black; color:white; font-family:sans-serif;">
+  <h2>Live Clickstream Data</h2>
+  <ul id="log"></ul>
+
+  <script>
+    const socket = new WebSocket("ws://localhost:8000/ws/stream");
+    const log = document.getElementById("log");
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      const item = document.createElement("li");
+      item.textContent = JSON.stringify(data);
+      log.appendChild(item);
+    };
+  </script>
+</body>
+</html>

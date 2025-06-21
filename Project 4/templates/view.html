@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Clickstream Data</title>
+  <style>
+    body { font-family: Arial; background-color: #111; color: #eee; padding: 20px; }
+    .log { margin-top: 20px; max-height: 400px; overflow-y: scroll; }
+    .entry { margin-bottom: 10px; padding: 10px; border: 1px solid #333; background: #222; }
+  </style>
+</head>
+<body>
+  <h1>Live Clickstream Data</h1>
+  <div id="log" class="log"></div>
+
+  <script>
+    const log = document.getElementById('log');
+    const socket = new WebSocket("ws://localhost:8000/ws/stream");
+
+    socket.onmessage = (event) => {
+      const data = JSON.parse(event.data);
+      const entry = document.createElement("div");
+      entry.className = "entry";
+      entry.textContent = JSON.stringify(data, null, 2);
+      log.prepend(entry); // Most recent at top
+    };
+
+    socket.onclose = () => {
+      const msg = document.createElement("div");
+      msg.textContent = "🔌 Connection closed";
+      log.prepend(msg);
+    };
+  </script>
+</body>
+</html>
