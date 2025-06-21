@@ -7,36 +7,33 @@ export default function Project4() {
       <Navbar />
       <div className="pt-32 p-8 max-w-4xl mx-auto text-white bg-black min-h-screen">
         <h1 className="text-4xl font-bold mb-4 text-center text-gray-300">
-          Real-Time Data Streaming Dashboard
+          Real-Time Clickstream Dashboard
         </h1>
 
         <p className="text-lg mb-6 text-gray-300 text-center">
-          This project demonstrates real-time data streaming using FastAPI,
-          WebSockets, and Chart.js. The dashboard includes live purchase
-          updates, interactive charts, clickstream logs, and a CSV export
-          feature.
+          A real-time dashboard built with FastAPI, WebSockets, and Chart.js. Includes interactive
+          charts, clickstream logs, exportable CSV, and GitHub integration.
         </p>
 
         {/* Summary */}
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📊 Project Summary</h2>
+        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📊 Summary</h2>
         <ul className="list-disc list-inside mb-6 text-gray-300">
-          <li>Built a real-time dashboard that streams purchase data live.</li>
-          <li>Used FastAPI with WebSockets for backend data streaming.</li>
-          <li>Frontend developed in React with Chart.js for live updates.</li>
-          <li>Displays outcome distributions, purchase trends, and raw logs.</li>
+          <li>Streamed historical clickstream from CSV via FastAPI + WebSockets.</li>
+          <li>Rendered live purchase and event charts using Chart.js in React.</li>
+          <li>Provides CSV export and JSON log listing from live feed.</li>
         </ul>
 
         {/* Tools */}
         <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">🧰 Tools Used</h2>
         <ul className="list-disc list-inside mb-6 text-gray-300">
-          <li>FastAPI, WebSockets</li>
-          <li>React, Chart.js, Tailwind CSS</li>
-          <li>Python for server-side data prep</li>
+          <li>FastAPI, Pandas, Uvicorn</li>
+          <li>React, Chart.js</li>
+          <li>CSV export functionality</li>
         </ul>
 
         {/* Screenshots */}
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📷 Dashboard Screenshots</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📷 Screenshots</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           <a
             href="/images/project4/Outcome_Distribution.png"
             target="_blank"
@@ -55,12 +52,10 @@ export default function Project4() {
           >
             <img
               src="/images/project4/Realtime_Product_Price.png"
-              alt="Real-Time Product Price Stream"
+              alt="Real-Time Product Price"
               className="rounded shadow-md w-full hover:scale-105 transition-transform duration-200"
             />
           </a>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
           <a
             href="/images/project4/Live_Purchase_Amount.png"
             target="_blank"
@@ -85,31 +80,27 @@ export default function Project4() {
           </a>
         </div>
 
-        {/* CSV Download */}
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📁 Download Sample Data</h2>
+        {/* CSV Export + GitHub */}
+        <h2 className="text-2xl font-semibold mt-10 mb-2 text-gray-300">📁 CSV Export & GitHub</h2>
         <p className="text-gray-300 mb-4">
-          Download a sample of the cleaned clickstream data used in the project.
+          Download the cleaned clickstream dataset or view the source code on GitHub.
         </p>
-        <a
-          href="/templates/cleaned_clickstream.csv"
-          target="_blank"
-          className="inline-block bg-gray-600 text-white px-6 py-3 rounded hover:bg-gray-700 transition mb-10"
-          download
-        >
-          Download CSV
-        </a>
-
-        {/* GitHub Link */}
-        <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📂 GitHub Repository</h2>
-        <p>
+        <div className="flex flex-col md:flex-row gap-4 mb-24">
+          <a
+            href="/projects/project4/cleaned_clickstream.csv"
+            className="bg-gray-600 text-white px-6 py-3 rounded hover:bg-gray-700 transition text-center"
+            download
+          >
+            Export CSV
+          </a>
           <a
             href="https://github.com/amschembri81/live_data_stream"
             target="_blank"
-            className="text-blue-500 underline"
+            className="text-blue-400 underline text-center pt-3 md:pt-0"
           >
-            View Project on GitHub
+            View on GitHub
           </a>
-        </p>
+        </div>
       </div>
     </>
   );
