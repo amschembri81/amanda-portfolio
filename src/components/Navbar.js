@@ -37,7 +37,7 @@ const Navbar = () => {
               Projects ▾
             </button>
             {showDropdown && (
-              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-48 z-50">
+              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-64 z-50">
                 <Link
                   href="/projects"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
@@ -48,31 +48,31 @@ const Navbar = () => {
                   href="/projects/project1"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 1
+                  SuperStore Sales Dashboard
                 </Link>
                 <Link
                   href="/projects/project2"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 2
+                  SQL + Python Data Pipeline
                 </Link>
                 <Link
                   href="/projects/project3"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 3
+                  Term Deposit Subscription Predictor
                 </Link>
                 <Link
                   href="/projects/project4"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 4
+                  Live Data Stream Dashboard
                 </Link>
                 <Link
                   href="/projects/project5"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 5
+                  Task Tracker with Google Sheets
                 </Link>
               </div>
             )}

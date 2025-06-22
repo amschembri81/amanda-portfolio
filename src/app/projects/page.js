@@ -69,9 +69,11 @@ export default function ProjectsOverview() {
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
             <h2 className="text-xl font-semibold text-gray-400 mb-2">
-              Project 5
+              Task Tracker with Google Sheets
             </h2>
-            <p>Coming Soon!</p>
+            <p>
+              A lightweight task management tool built in React using TailwindCSS and connected to Google Sheets for persistent data storage. Includes dynamic filtering by task status, real-time submission form, and spreadsheet sync for tracking due dates and priorities.
+            </p>
           </Link>
         </div>
       </main>
