@@ -1,4 +1,4 @@
-# 🧑🏻‍💻 Amanda Morrison – Portfolio Website
+# 🧑🏻‍💻 Hi, I'm Amanda Morrison 👋🏻
 
 Welcome to my personal portfolio site where I showcase selected data and web projects, blending data storytelling, frontend development, and UX design.
 
