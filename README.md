@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amanda Morrison - Developer Portfolio
 
-## Getting Started
+Hi, I'm Amanda Morrison 👋🏻
+I’m a solutions-focused Data Analyst with a strong foundation in UX Design and Web Development. I blend data storytelling, dashboard design, and front-end skills to uncover insights, untangle complex technical issues, and create intuitive user experiences.
 
-First, run the development server:
+Having transitioned from a successful career in education, I bring a master’s degree in Integrative Leadership (with a focus on data and agile methodologies) and certifications in UI/UX Design and Full Stack Web Development. I thrive in roles that combine technical problem-solving with strategic systems thinking and cross-functional collaboration, especially within mission-driven organizations.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
 
-## Learn More
+**Website Framework & Styling:**
+- **Framework**: [Next.js](https://nextjs.org/) (React Framework)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Hosting**: [Vercel](https://vercel.com/)
+- **Images**: Optimized via Next.js Image component
+- **Markdown**: Used in project READMEs
 
-To learn more about Next.js, take a look at the following resources:
+**Programming Languages:**
+- Python
+- JavaScript
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Data Analysis & Machine Learning:**
+- Pandas
+- Scikit-learn
+- XGBoost
+- SHAP (SHapley Additive exPlanations)
+- Jupyter Notebook
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Databases & Data Handling:**
+- SQL (General)
+- PostgreSQL
+- Google Sheets API (for data storage/integration)
 
-## Deploy on Vercel
+**Web Development & APIs:**
+- React (fundamental to Next.js)
+- FastAPI (for building APIs)
+- WebSockets (for real-time data streaming)
+- Streamlit (for interactive web applications/dashboards)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Data Visualization & Business Intelligence:**
+- Matplotlib
+- Seaborn
+- Plotly
+- Chart.js
+- Power BI (mentioned in project description)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🧠 Featured Projects
+
+| Project | Description |
+|--------|-------------|
+| **Customer Churn Explainability Dashboard** | SHAP-based Streamlit dashboard to interpret model predictions |
+| **Live Data Stream Dashboard** | Real-time analytics dashboard using WebSockets + React + Chart.js |
+| **SQL + Python Data Pipeline** | ETL pipeline project using PostgreSQL and Pandas |
+| **Task Tracker** | Frontend React app integrated with Google Sheets API |
+| **Superstore Sales Dashboard** | Power BI dashboard for sales and profit analysis |
+
+Each project includes:
+
+- A dedicated page under `/projects/[project#]`
+- Key features and tools
+- Image previews
+- GitHub link
+
+---
+
+
