@@ -70,4 +70,6 @@ Each project includes:
 
 ---
 
+## 📫  Message me on [LinkedIn](https://www.linkedin.com/in/amschembri/).
+
 
