@@ -1,4 +1,4 @@
-# Hi, I'm Amanda Morrison 👋🏻
+# 👩🏻‍💻  Hi, I'm Amanda Morrison  👋🏻
 
 
 I’m a solutions-focused Data Analyst with a strong foundation in UX Design and Web Development. I blend data storytelling, dashboard design, and front-end skills to uncover insights, untangle complex technical issues, and create intuitive user experiences.
