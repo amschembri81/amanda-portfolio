@@ -13,13 +13,6 @@ Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
 This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
 
-**Website Framework & Styling:**
-- **Framework**: [Next.js](https://nextjs.org/) (React Framework)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Hosting**: [Vercel](https://vercel.com/)
-- **Images**: Optimized via Next.js Image component
-- **Markdown**: Used in project READMEs
-
 **Programming Languages:**
 - Python
 - JavaScript
