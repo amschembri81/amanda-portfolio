@@ -4,13 +4,16 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const [showDataDropdown, setShowDataDropdown] = useState(false);
+  const [showDesignDropdown, setShowDesignDropdown] = useState(false);
 
-  // Close dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!e.target.closest("#projects-menu")) {
-        setShowDropdown(false);
+      if (!e.target.closest("#data-menu")) {
+        setShowDataDropdown(false);
+      }
+      if (!e.target.closest("#design-menu")) {
+        setShowDesignDropdown(false);
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -28,15 +31,18 @@ const Navbar = () => {
             Home
           </Link>
 
-          {/* Click-based Projects Dropdown */}
-          <div className="relative" id="projects-menu">
+          {/* Data Analysis Projects Dropdown */}
+          <div className="relative" id="data-menu">
             <button
               className="text-gray-800 hover:text-blue-500 focus:outline-none"
-              onClick={() => setShowDropdown((prev) => !prev)}
+              onClick={() => {
+                setShowDataDropdown((prev) => !prev);
+                setShowDesignDropdown(false);
+              }}
             >
-              Projects ▾
+              Data Analysis Projects ▾
             </button>
-            {showDropdown && (
+            {showDataDropdown && (
               <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-64 z-50">
                 <Link
                   href="/projects"
@@ -79,6 +85,65 @@ const Navbar = () => {
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Customer Churn Explainability
+                </Link>
+              </div>
+            )}
+          </div>
+
+          {/* Design Projects Dropdown */}
+          <div className="relative" id="design-menu">
+            <button
+              className="text-gray-800 hover:text-blue-500 focus:outline-none"
+              onClick={() => {
+                setShowDesignDropdown((prev) => !prev);
+                setShowDataDropdown(false);
+              }}
+            >
+              Design Projects ▾
+            </button>
+            {showDesignDropdown && (
+              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-64 z-50">
+                <Link
+                  href="/design"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Overview of Design Projects
+                </Link>
+                <Link
+                  href="/design/design1"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  GalleryPal
+                </Link>
+                <Link
+                  href="/design/design2"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Project 2
+                </Link>
+                <Link
+                  href="/design/design3"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Project 3
+                </Link>
+                <Link
+                  href="/design/design4"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Project 4
+                </Link>
+                <Link
+                  href="/design/design5"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Project 5
+                </Link>
+                <Link
+                  href="/design/design6"
+                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  Project 6
                 </Link>
               </div>
             )}

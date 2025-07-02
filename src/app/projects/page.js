@@ -6,7 +6,7 @@ export default function ProjectsOverview() {
     <>
       <Navbar />
       <main className="min-h-screen bg-black text-white pt-28 p-6">
-        <h1 className="text-3xl font-bold mb-6 text-center">My Projects</h1>
+        <h1 className="text-3xl font-bold mb-6 text-center">Overview of Data Analysis Projects</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {/* Project 1 */}
