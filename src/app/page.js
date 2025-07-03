@@ -15,14 +15,14 @@ export default function Home() {
           </span>
         </h1>
 
-        <p className="text-xl text-center text-gray-300 max-w-4xl mb-6">
+        <p className="text-xl text-center text-gray-300 max-w-3xl mb-6">
           I&apos;m a multidisciplinary technologist with a blended background in
           data analytics, UX design, and full stack development. I combine data
           storytelling, dashboard design, and intuitive front-end development to
           uncover insights and craft seamless digital experiences. 
         </p>
 
-        <p className="text-xl text-center text-gray-300 max-w-4xl mb-6">
+        <p className="text-xl text-center text-gray-300 max-w-3xl mb-6">
           With a foundation in application support and workflow automation, I bring a
           solutions-focused mindset to solving complex problems and creating
           tools that are both intelligent and user-centered.
