@@ -59,7 +59,7 @@ export default function TrackifyProjectPage() {
       <Navbar />
       <main className="min-h-screen bg-black text-white pt-28 p-6">
         <div className="max-w-4xl mx-auto space-y-10">
-          <h1 className="text-4xl font-bold text-center">Trackify</h1>
+          <h1 className="text-4xl font-bold mb-10 text-center text-gray-300">Trackify: Smart Data Tracking for Special Education</h1>
 
           {/* Overview */}
           <section>
@@ -126,6 +126,26 @@ export default function TrackifyProjectPage() {
             </ul>
           </section>
 
+          {/* Download Design File */}
+          <section className="mt-12">
+            <div className="max-w-4xl mx-auto text-white">
+              <h2 className="text-2xl font-semibold mb-4">
+                Download Figma Board
+              </h2>
+              <p className="text-lg mb-6 max-w-2xl">
+                Want to take a closer look at the design structure? You can
+                download the full version of the Figma board here:
+              </p>
+              <a
+                href="/files/Trackify_Designs.png"
+                download
+                className="inline-block bg-gray-700 text-white font-semibold px-6 py-3 rounded hover:bg-gray-600 transition"
+              >
+                Download Trackify_Designs.png
+              </a>
+            </div>
+          </section>
+
           {/* Gallery Carousel */}
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-center">
@@ -159,22 +179,6 @@ export default function TrackifyProjectPage() {
                 </button>
               </div>
             </div>
-          </section>
-
-          {/* Download Design File */}
-          <section className="mt-12 bg-black text-white text-center">
-            <h2 className="text-3xl font-bold mb-4">Download Figma Board</h2>
-            <p className="text-lg mb-6 max-w-2xl mx-auto">
-              Want to take a closer look at the design structure? You can
-              download the full version of the Figma board here:
-            </p>
-            <a
-              href="/files/Trackify_Designs.png"
-              download
-              className="inline-block bg-gray-700 text-white font-semibold px-6 py-3 rounded hover:bg-gray-600 transition"
-            >
-              Download Trackify_Designs.png
-            </a>
           </section>
 
           {/* Interactive Prototype */}

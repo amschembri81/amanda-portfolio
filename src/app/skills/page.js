@@ -5,7 +5,6 @@ export default function Skills() {
   const [navHeight, setNavHeight] = useState(0);
 
   useEffect(() => {
-    // Dynamically get the height of the navigation bar
     const nav = document.querySelector("nav");
     if (nav) {
       setNavHeight(nav.offsetHeight);
@@ -26,9 +25,13 @@ export default function Skills() {
       ],
     },
     {
-      title: "Design & UX",
+      title: "Design & Analytics Tools",
       skills: [
         "Figma",
+        "Adobe XD",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Adobe Analytics",
         "WCAG Accessibility",
         "Responsive layouts",
         "User-centered design",
@@ -74,8 +77,6 @@ export default function Skills() {
         "React",
         "React Native",
         "TailwindCSS",
-        "Figma",
-        "WCAG",
       ],
     },
     {
@@ -96,12 +97,11 @@ export default function Skills() {
     <section
       id="skills"
       className="min-h-screen bg-zinc-900 text-white px-6 pb-20"
-      // Adjust padding top to account for fixed navbar height + extra spacing
       style={{ paddingTop: `${navHeight ? navHeight + 40 : 100}px` }}
     >
       <div className="text-center mb-16">
-        {/* Main "Skills" heading with responsive sizing */}
-        <h2 className="text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        {/* Main "Skills" */}
+        <h2 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight">
           Skills
         </h2>
       </div>
@@ -110,7 +110,6 @@ export default function Skills() {
         {skillSections.map((section, index) => (
           <div
             key={index}
-            // Added 'w-full' to ensure the card takes full width of its grid column
             className="bg-zinc-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-1 h-full flex flex-col w-full"
           >
             <h3 className="text-xl font-bold text-gray-100 mb-4 border-b border-zinc-700 pb-2">

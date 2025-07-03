@@ -48,13 +48,19 @@ export default function DesignProjectsOverview() {
             </p>
           </Link>
 
-          {/* Project 4 */}
+          {/* Project 4: Nestara */}
           <Link
             href="/design/design4"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-gray-400 mb-2">Project 4</h2>
-            <p>A brief description of the design project can go here.</p>
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">Nestara</h2>
+            <p>
+              A mobile real estate app designed to help users browse homes, find a realtor,
+              book appointments, save favorite listings, and learn about financing. Built as
+              a collaborative group project, I contributed heavily to the agent finder, 
+              saved homes, and appointments screens. Designed using Figma with full user 
+              research, mockups, and multiple testing rounds.
+            </p>
           </Link>
 
           {/* Project 5 */}
