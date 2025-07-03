@@ -10,36 +10,36 @@ Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
 ---
 
-## 🛠️ Tech Stack
+ 🛠️ Tech Stack
 
 This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
 
-** 🧠 Programming Languages:**
+### 🧠 Programming Languages:
 - Python
 - JavaScript
 - SQL
 - R
 
-** 📊 Data Analysis & Machine Learning
+### 📊 Data Analysis & Machine Learning
 - Pandas, NumPy
 - Scikit-learn, XGBoost, LightDBM
 - SHAP (SHapley Additive exPlanations)
 - Jupyter Notebook
 
-** 🖼️ Design & UX Tools
+### 🖼️ Design & UX Tools
 - Figma (UI Design, Prototyping)
 - Miro (User Flows, Research)
 - WCAG Guidelines (Accessibility)
 - Responsive Layouts (Mobile-first Design)
 
-** 🧰 Web Development & Front-End
+### 🧰 Web Development & Front-End
 - React
 - Next.js
 - Tailwind CSS
 - HTML/CSS
 - Chart.js, D3.js
 
-** 📈 Data Visualization & BI Tools
+### 📈 Data Visualization & BI Tools
 - Power BI
 - Tableau
 - Looker Studio
@@ -47,7 +47,7 @@ This portfolio website and the projects featured within it utilize a broad range
 - Plotly
 - Streamlit (for building dashboards)
 
-** 🧩 Automation & Integration
+### 🧩 Automation & Integration
 - Zapier
 - Google Apps Script
 - Workflow Automation Tools
