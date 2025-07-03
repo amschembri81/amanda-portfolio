@@ -54,7 +54,7 @@ This portfolio website and the projects featured within it utilize a broad range
 
 ---
 
-## 🧠 Featured Projects
+## 💻 Featured Projects
 
 | Project | Description |
 |--------|-------------|
