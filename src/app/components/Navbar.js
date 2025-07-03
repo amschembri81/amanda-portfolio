@@ -119,19 +119,19 @@ const Navbar = () => {
                   href="/design/design2"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 2
+                  Luxe Cosmetics
                 </Link>
                 <Link
                   href="/design/design3"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 3
+                  Trackify
                 </Link>
                 <Link
                   href="/design/design4"
                   className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  Project 4
+                  Nestara
                 </Link>
                 <Link
                   href="/design/design5"

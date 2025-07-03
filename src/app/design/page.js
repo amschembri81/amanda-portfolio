@@ -22,22 +22,30 @@ export default function DesignProjectsOverview() {
             </p>
           </Link>
 
-          {/* Project 2 */}
+          {/* Project 2: Luxe Cosmetics */}
           <Link
             href="/design/design2"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-gray-400 mb-2">Project 2</h2>
-            <p>A brief description of the design project can go here.</p>
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">Luxe Cosmetics</h2>
+            <p>
+              A complete e-commerce checkout flow built for a cosmetics brand, featuring a
+              clean design, Stripe integration, and a fully responsive UI—designed and
+              developed as contract work using Figma and JavaScript.
+            </p>
           </Link>
 
-          {/* Project 3 */}
+          {/* Project 3: Trackify */}
           <Link
             href="/design/design3"
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
-            <h2 className="text-xl font-semibold text-gray-400 mb-2">Project 3</h2>
-            <p>A brief description of the design project can go here.</p>
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">Trackify</h2>
+            <p>
+              A data tracking app for special education professionals, designed to simplify
+              IEP goal creation and visualization. Built with accessibility in mind and
+              designed in Figma with user research, testing, and iteration over a 3-week sprint.
+            </p>
           </Link>
 
           {/* Project 4 */}
