@@ -53,9 +53,12 @@ This portfolio showcases a diverse range of projects across UX design, full stac
 - Google Apps Script
 - Workflow Automation Tools
 
+
 ---
 
+
 ## 💻 Featured Projects
+
 
 ### 🎨 Data Projects
 
@@ -66,6 +69,7 @@ This portfolio showcases a diverse range of projects across UX design, full stac
 | **SQL + Python Data Pipeline** | ETL pipeline project using PostgreSQL and Pandas |
 | **Task Tracker** | Frontend React app integrated with Google Sheets API |
 | **Superstore Sales Dashboard** | Power BI dashboard for sales and profit analysis |
+
 
 
 ### 📈 Design Projects
