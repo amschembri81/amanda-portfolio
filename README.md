@@ -12,7 +12,8 @@ Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
 ## 🛠️ Tech Stack
 
-This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
+This portfolio showcases a diverse range of projects across UX design, full stack web development, and data analytics. From interactive prototypes and responsive interfaces to machine learning dashboards and real-time data visualizations, each project reflects a strong foundation in technical execution and user-centered thinking.
+
 
 ### 🧠 Programming Languages
 - Python
