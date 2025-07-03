@@ -14,7 +14,7 @@ Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
 This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
 
-### 🧠 Programming Languages:
+### 🧠 Programming Languages
 - Python
 - JavaScript
 - SQL
