@@ -14,34 +14,43 @@ Live site: [amanda-morrison.com](https://www.amanda-morrison.com)
 
 This portfolio website and the projects featured within it utilize a broad range of technologies across web development, data analysis, and machine learning.
 
-**Programming Languages:**
+🧠 **Programming Languages:**
 - Python
 - JavaScript
+- SQL
+- R
 
-**Data Analysis & Machine Learning:**
-- Pandas
-- Scikit-learn
-- XGBoost
+📊 **Data Analysis & Machine Learning
+- Pandas, NumPy
+- Scikit-learn, XGBoost, LightDBM
 - SHAP (SHapley Additive exPlanations)
 - Jupyter Notebook
 
-**Databases & Data Handling:**
-- SQL (General)
-- PostgreSQL
-- Google Sheets API (for data storage/integration)
+🖼️ **Design & UX Tools
+- Figma (UI Design, Prototyping)
+- Miro (User Flows, Research)
+- WCAG Guidelines (Accessibility)
+- Responsive Layouts (Mobile-first Design)
 
-**Web Development & APIs:**
-- React (fundamental to Next.js)
-- FastAPI (for building APIs)
-- WebSockets (for real-time data streaming)
-- Streamlit (for interactive web applications/dashboards)
+🧰 **Web Development & Front-End
+- React
+- Next.js
+- Tailwind CSS
+- HTML/CSS
+- Chart.js, D3.js
 
-**Data Visualization & Business Intelligence:**
-- Matplotlib
-- Seaborn
+📈 **Data Visualization & BI Tools
+- Power BI
+- Tableau
+- Looker Studio
+- Matplotlib, Seaborn
 - Plotly
-- Chart.js
-- Power BI (mentioned in project description)
+- Streamlit (for building dashboards)
+
+🧩 **Automation & Integration
+- Zapier
+- Google Apps Script
+- Workflow Automation Tools
 
 ---
 
@@ -55,12 +64,17 @@ This portfolio website and the projects featured within it utilize a broad range
 | **Task Tracker** | Frontend React app integrated with Google Sheets API |
 | **Superstore Sales Dashboard** | Power BI dashboard for sales and profit analysis |
 
-Each project includes:
 
-- A dedicated page under `/projects/[project#]`
-- Key features and tools
-- Image previews
-- GitHub link
+### 🎨 Design Projects
+
+| Project       | Description |
+|---------------|-------------|
+| **GalleryPal** | A mobile museum companion app offering audio insights, artwork scanning, and personalized gallery tours — designed in Figma for a seamless on-site experience. |
+| **Luxe Cosmetics** | E-commerce UI/UX for a boutique cosmetics brand featuring a modern checkout flow, responsive layouts, and Stripe-ready interface — designed and prototyped in Figma. |
+| **Trackify** | A special education IEP tracking app with clear data visualizations, goal tracking tools, and accessibility-focused UX — designed with Figma and tested over a 3-week sprint. |
+| **Nestara** | Real estate mobile app inspired by Zillow, supporting agent discovery, home searches, appointments, and saved collections — built collaboratively in a team of 6 designers. |
+| **[Coming Soon]** | Additional projects in-progress, including onboarding flows and mobile design systems. |
+
 
 ---
 
