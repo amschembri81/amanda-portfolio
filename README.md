@@ -1,7 +1,8 @@
 # 👩🏻‍💻  Hi, I'm Amanda Morrison  👋🏻
 
 
-I’m a solutions-focused Data Analyst with a strong foundation in UX Design and Web Development. I blend data storytelling, dashboard design, and front-end skills to uncover insights, untangle complex technical issues, and create intuitive user experiences.
+I'm a multidisciplinary technologist with a blended background in data analytics, UX design, and full stack development.
+I combine data storytelling, dashboard design, and intuitive front-end development to uncover insights and craft seamless digital experiences. With a foundation in application support and workflow automation, I bring a solutions-focused mindset to solving complex problems and creating tools that are both intelligent and user-centered.
 
 Having transitioned from a successful career in education, I bring a master’s degree in Integrative Leadership (with a focus on data and agile methodologies) and certifications in UI/UX Design and Full Stack Web Development. I thrive in roles that combine technical problem-solving with strategic systems thinking and cross-functional collaboration, especially within mission-driven organizations.
 
