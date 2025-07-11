@@ -15,11 +15,10 @@ export default function ProjectsOverview() {
             className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
           >
             <h2 className="text-xl font-semibold text-gray-400 mb-2">
-              SuperStore Sales Dashboard
+              Clinical Text Extractor
             </h2>
             <p>
-              A Streamlit dashboard that transforms Amazon review data into interactive, insight-rich visuals—highlighting my skills in SQL data extraction, Python-based transformation, and user-centered analytics to help stakeholders explore sentiment trends, review quality, and product performance with ease.
-            </p>
+              A Streamlit dashboard that transforms unstructured clinical notes into structured, analyzable data—highlighting my skills in API integration, LLM-powered extraction, SQLite logging, and interactive visualizations to help users identify diagnoses, prescriptions, and follow-up plans with clarity and ease.            </p>
           </Link>
 
           {/* Project 2 */}
@@ -86,6 +85,19 @@ export default function ProjectsOverview() {
             </h2>
             <p>
               Developed a machine learning model to predict customer churn, using scikit-learn for model training and evaluation. Features include data preprocessing, feature engineering, and a comparative analysis of different classification algorithms (e.g., Logistic Regression, Gradient Boosting) to identify the most impactful predictors of churn.
+            </p>
+          </Link>
+
+          {/* Project 7 */}
+          <Link
+            href="/projects/project7"
+            className="bg-gray-800 p-4 rounded-lg shadow hover:bg-gray-700 transition"
+          >
+            <h2 className="text-xl font-semibold text-gray-400 mb-2">
+              SuperStore Sales Dashboard
+            </h2>
+            <p>
+              A Streamlit dashboard that transforms Amazon review data into interactive, insight-rich visuals—highlighting my skills in SQL data extraction, Python-based transformation, and user-centered analytics to help stakeholders explore sentiment trends, review quality, and product performance with ease.
             </p>
           </Link>
         </div>

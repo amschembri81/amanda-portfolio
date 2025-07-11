@@ -1,105 +1,74 @@
-"use client"; 
-
-import { useEffect } from "react";
-import Image from "next/image"; 
-
 export default function Project1() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
-    script.async = true;
-    const vizContainer = document.getElementById("tableauViz");
-    if (vizContainer) {
-      vizContainer.appendChild(script);
-    }
-  }, []);
-
   return (
-    <>
-      <main className="min-h-screen bg-black text-white px-4 pt-32 pb-16">
-        <h1 className="text-4xl font-bold mb-10 text-center text-gray-300">
-          SuperStore Sales Dashboard
-        </h1>
+    <div className="pt-32 p-8 max-w-3xl mx-auto text-white bg-black min-h-screen">
+      <h1 className="text-4xl font-bold mb-4 text-center text-gray-300">
+        Clinical Text Extractor: GPT‑4 Powered Streamlit Dashboard
+      </h1>
 
-        {/* Description */}
-        <section className="max-w-5xl mx-auto mb-12 text-center">
-          <p className="text-lg text-gray-300">
-            This interactive Tableau dashboard showcases my ability to transform raw sales data into clear,
-            actionable insights. Using real-world SuperStore data, I conducted a multi-level analysis of profit
-            trends, regional sales performance, and product category effectiveness. This project highlights my
-            proficiency in data cleaning, visual analytics, and UX-focused dashboard design—essential skills I use
-            to help stakeholders quickly understand performance and make informed decisions.
-          </p>
-        </section>
+      <p className="text-lg mb-6 text-gray-300 text-center">
+        This app demonstrates how to extract structured information from
+        unstructured clinical notes using OpenAI{"'"}s GPT‑4 model. It enables both
+        CSV-based batch extraction and manual input, while storing results in a
+        SQLite database and providing rich visualizations.
+      </p>
 
-        {/* Dashboard + Dataset */}
-        <section className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-          {/* Dashboard */}
-          <div
-            className="tableauPlaceholder"
-            id="tableauViz"
-            style={{ position: "relative", width: "100%", height: "700px" }}
-          >
-            <noscript>
-              <a href="https://public.tableau.com/views/SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard">
-                <Image
-                  alt="Superstore Dashboard"
-                  src="https://public.tableau.com/static/images/Su/SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard/1_rss.png"
-                  width={1200}
-                  height={800}
-                  style={{ border: "none", width: "100%", height: "auto" }}
-                />
-              </a>
-            </noscript>
-            <object
-              className="tableauViz"
-              style={{
-                width: "100%",
-                height: "700px",
-                display: "block",
-                border: "none",
-              }}
-            >
-              <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
-              <param name="embed_code_version" value="3" />
-              <param name="site_root" value="" />
-              <param
-                name="name"
-                value="SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard"
-              />
-              <param name="tabs" value="yes" />
-              <param name="toolbar" value="yes" />
-              <param
-                name="static_image"
-                value="https://public.tableau.com/static/images/Su/SuperStoreSalesPerformance-AS/SuperStoreSalesPerformanceDashboard/1.png"
-              />
-              <param name="animate_transition" value="yes" />
-              <param name="display_static_image" value="yes" />
-              <param name="display_spinner" value="yes" />
-              <param name="display_overlay" value="yes" />
-              <param name="display_count" value="yes" />
-              <param name="language" value="en-US" />
-            </object>
-          </div>
+      {/* Summary */}
+      <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📊 Project Summary</h2>
+      <ul className="list-disc list-inside mb-6 text-gray-300">
+        <li>Uploads CSVs of clinical notes and extracts diagnoses, medications, and follow-up plans using GPT‑4.</li>
+        <li>Includes manual input for one-off extraction scenarios.</li>
+        <li>Logs extractions in a SQLite database for traceability and historical review.</li>
+        <li>Visualizes key extraction metrics and audit summaries in real-time.</li>
+      </ul>
 
-          {/* CSV Download */}
-          <div className="bg-gray-900 rounded-lg p-6 flex flex-col justify-center items-center shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-gray-300 text-center">
-              📁 Download the Dataset
-            </h2>
-            <p className="text-gray-300 mb-6 text-center">
-              Explore the original CSV dataset used to build the dashboard. You can open it in Excel, Power BI, or any data tool of your choice.
-            </p>
-            <a
-              href="/assets/SuperStore_Sales_Data.csv"
-              download
-              className="inline-block bg-gray-600 text-white px-6 py-3 rounded hover:bg-teal-700 transition"
-            >
-              Download SuperStore_Sales_Data.csv
-            </a>
-          </div>
-        </section>
-      </main>
-    </>
+      {/* Tools */}
+      <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">🧰 Tools Used</h2>
+      <ul className="list-disc list-inside mb-6 text-gray-300">
+        <li>Streamlit for UI and dashboard interactivity</li>
+        <li>OpenAI API (GPT‑4) for clinical note parsing</li>
+        <li>SQLite for structured logging and persistence</li>
+        <li>Plotly Express for dynamic visualizations</li>
+        <li>Pandas for data preprocessing</li>
+      </ul>
+
+      {/* Screenshots */}
+      <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📷 Dashboard Screenshots</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <a
+          href="/images/project1/Upload_Extract.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/project1/Upload_Extract.png"
+            alt="Upload and Extract view"
+            className="rounded shadow-md w-full hover:scale-105 transition-transform duration-200"
+          />
+        </a>
+        <a
+          href="/images/project1/Manual_Input.png"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/project1/Manual_Input.png"
+            alt="Manual Input view"
+            className="rounded shadow-md w-full hover:scale-105 transition-transform duration-200"
+          />
+        </a>
+      </div>
+
+      {/* GitHub Link */}
+      <h2 className="text-2xl font-semibold mt-6 mb-2 text-gray-300">📂 GitHub Repository</h2>
+      <p>
+        <a
+          href="https://github.com/amschembri81/Clinical-Text-Extractor"
+          target="_blank"
+          className="text-blue-500 underline"
+        >
+          View Clinical Text Extractor on GitHub
+        </a>
+      </p>
+    </div>
   );
 }

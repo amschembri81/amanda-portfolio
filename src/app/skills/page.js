@@ -47,6 +47,10 @@ export default function Skills() {
       ],
     },
     {
+      title: "Productivity & Collaboration Tools",
+      skills: ["Salesforce", "Jira", "Trello", "Notion", "Miro"],
+    },
+    {
       title: "Content & Support",
       skills: [
         "Technical writing",

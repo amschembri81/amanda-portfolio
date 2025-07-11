@@ -4,16 +4,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [showDataDropdown, setShowDataDropdown] = useState(false);
-  const [showDesignDropdown, setShowDesignDropdown] = useState(false);
+  const [showProjectsDropdown, setShowProjectsDropdown] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (!e.target.closest("#data-menu")) {
-        setShowDataDropdown(false);
-      }
-      if (!e.target.closest("#design-menu")) {
-        setShowDesignDropdown(false);
+      if (!e.target.closest("#projects-menu")) {
+        setShowProjectsDropdown(false);
       }
     };
     document.addEventListener("click", handleClickOutside);
@@ -31,117 +27,113 @@ const Navbar = () => {
             Home
           </Link>
 
-          {/* Data Analysis Projects Dropdown */}
-          <div className="relative" id="data-menu">
+          {/* Projects Dropdown */}
+          <div className="relative" id="projects-menu">
             <button
               className="text-gray-800 hover:text-blue-500 focus:outline-none"
-              onClick={() => {
-                setShowDataDropdown((prev) => !prev);
-                setShowDesignDropdown(false);
-              }}
+              onClick={() => setShowProjectsDropdown((prev) => !prev)}
             >
-              Data Analysis Projects ▾
+              Projects •
             </button>
-            {showDataDropdown && (
-              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-64 z-50">
+
+            {showProjectsDropdown && (
+              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-80 z-50">
+                {/* Data Projects */}
+                <div className="px-4 py-2 text-base font-semibold text-gray-700">
+                  Data Projects
+                </div>
                 <Link
                   href="/projects"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block px-6 py-2 text-gray-800 hover:bg-blue-100 font-semibold"
                 >
-                  All Projects
+                  Overview of Data Projects
                 </Link>
                 <Link
                   href="/projects/project1"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
-                  SuperStore Sales Dashboard
+                  Clinical Text Extractor
                 </Link>
                 <Link
                   href="/projects/project2"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   SQL + Python Data Pipeline
                 </Link>
                 <Link
                   href="/projects/project3"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Term Deposit Subscription Predictor
                 </Link>
                 <Link
                   href="/projects/project4"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Live Data Stream Dashboard
                 </Link>
                 <Link
                   href="/projects/project5"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Task Tracker with Google Sheets
                 </Link>
                 <Link
                   href="/projects/project6"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Customer Churn Explainability
                 </Link>
-              </div>
-            )}
-          </div>
+                <Link
+                  href="/projects/project7"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
+                >
+                  SuperStore Sales Dashboard
+                </Link>
 
-          {/* Design Projects Dropdown */}
-          <div className="relative" id="design-menu">
-            <button
-              className="text-gray-800 hover:text-blue-500 focus:outline-none"
-              onClick={() => {
-                setShowDesignDropdown((prev) => !prev);
-                setShowDataDropdown(false);
-              }}
-            >
-              Design Projects ▾
-            </button>
-            {showDesignDropdown && (
-              <div className="absolute top-full left-0 mt-2 bg-white shadow-lg rounded-lg py-2 w-64 z-50">
+                {/* Design Projects */}
+                <div className="px-4 pt-4 pb-2 text-base font-semibold text-gray-700 border-t border-gray-200">
+                  Design Projects
+                </div>
                 <Link
                   href="/design"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block px-6 py-2 text-gray-800 hover:bg-blue-100 font-semibold"
                 >
                   Overview of Design Projects
                 </Link>
                 <Link
                   href="/design/design1"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   GalleryPal
                 </Link>
                 <Link
                   href="/design/design2"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Luxe Cosmetics
                 </Link>
                 <Link
                   href="/design/design3"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Trackify
                 </Link>
                 <Link
                   href="/design/design4"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Nestara
                 </Link>
                 <Link
                   href="/design/design5"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Project 5
                 </Link>
                 <Link
                   href="/design/design6"
-                  className="block px-4 py-2 text-gray-800 hover:bg-blue-100"
+                  className="block list-item list-disc ml-8 pl-2 py-2 text-gray-800 hover:bg-blue-100"
                 >
                   Project 6
                 </Link>
@@ -149,6 +141,7 @@ const Navbar = () => {
             )}
           </div>
 
+          {/* Other Links */}
           <Link href="/skills" className="text-gray-800 hover:text-blue-500">
             Skills
           </Link>
